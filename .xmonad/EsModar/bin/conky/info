@@ -1,0 +1,13 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+
+TEXT
+^fg(\#FFFFFF)  ^i(/home/kaze/.xmonad/icon/vol.xbm) ${exec sh /home/kaze/.xmonad/bin/volume.sh}^bg() \
+^bg(\#1A1A1A)  ^i(/home/kaze/.xmonad/icon/mem.xbm) ${mem}^bg()\
+^bg(\#1A1A1A)^fg(\#0BA0AB)^i(/home/kaze/.xmonad/icon/mr2.xbm)^fg()\
+^bg(\#0BA0AB)  ^i(/home/kaze/.xmonad/icon/uptime.xbm) $uptime_short ^bg()\
+

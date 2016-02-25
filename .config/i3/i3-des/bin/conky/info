@@ -1,0 +1,12 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+
+TEXT
+^fg(\#3F3F3F)  ^i(/home/kaze/.config/i3/icons/vol.xbm) ${exec sh /home/kaze/.config/i3/bin/volume.sh}^bg() \
+^bg(\#EEEEEE)^fg(\#3F3F3F) ^i(/home/kaze/.config/i3/icons/mem.xbm) ${mem}^bg()\
+^bg(\#EEEEEE)^fg(\#3F3F3F)  ^i(/home/kaze/.config/i3/icons/uptime.xbm) $uptime_short ^bg()\
+

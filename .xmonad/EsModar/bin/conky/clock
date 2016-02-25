@@ -1,0 +1,10 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+
+TEXT
+^bg(\#0BA0AB) ^i(/home/kaze/.xmonad/icon/clock.xbm) ${time %R %p}\
+^bg(\#0BA0AB)  ${exec sh /home/kaze/.xmonad/bin/volume-bar.sh}   ^bg()\

@@ -1,0 +1,9 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+
+TEXT
+^bg(\#E38179)^i(/home/kaze/.config/i3/icons/clock.xbm)  ${time %a %R } \

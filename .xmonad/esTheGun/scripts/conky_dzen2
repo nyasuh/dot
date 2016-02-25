@@ -1,0 +1,11 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+ 
+TEXT
+^fg(\#7d7d7d)^i(/home/kaze/.xmonad/icons/arch.xbm)^fg()  $kernel   \
+^fg(\#7d7d7d)^i(/home/kaze/.xmonad/icons/vol.xbm)^fg()   ${exec sh /home/kaze/.xmonad/scripts/func_volume.sh}   \
+^bg(\#FF172D)    ^i(/home/kaze/.xmonad/icons/clock.xbm)   ${time %a, %d %b %R %p}     \

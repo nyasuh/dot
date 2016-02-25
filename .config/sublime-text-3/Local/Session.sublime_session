@@ -1,0 +1,896 @@
+{
+	"folder_history":
+	[
+		"/home/kaze/Documents/nyasuh.github.io",
+		"/home/kaze/.config/manjaro-tools",
+		"/home/kaze/.config/manjaro",
+		"/home/kaze/nanikachan.github.io",
+		"/home/kaze/Documents",
+		"/home/kaze/jekyll",
+		"/home/kaze/git/will-jekyll-template-master",
+		"/home/kaze/Documents/Tugas Kuliah/new",
+		"/home/kaze/git/nanikachan.github.io/assets",
+		"/home/kaze/git/nanikachan.github.io",
+		"/home/kaze/.config/sublime-text-3/Local"
+	],
+	"last_version": 3103,
+	"last_window_id": 13,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"c",
+						"color"
+					],
+					[
+						"b",
+						"blockquote	Tag"
+					],
+					[
+						"ce",
+						"center	Tag"
+					],
+					[
+						"ro",
+						"Roboto"
+					],
+					[
+						"fon",
+						"font-family"
+					],
+					[
+						"M",
+						"m"
+					],
+					[
+						"wr",
+						"writeln"
+					],
+					[
+						"write",
+						"writeln"
+					],
+					[
+						"hasi",
+						"Hasil"
+					],
+					[
+						"ha",
+						"hasile"
+					],
+					[
+						"wri",
+						"writeln"
+					],
+					[
+						"A",
+						"A"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 354.0,
+				"last_filter": "tog",
+				"selected_items":
+				[
+					[
+						"tog",
+						"View: Toggle Menu"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"hexview",
+						"Hex Viewer: Generate Hash"
+					],
+					[
+						"hand",
+						"Snippet: handlebars template"
+					],
+					[
+						"markdown",
+						"Set Syntax: Markdown Extended"
+					],
+					[
+						"ma",
+						"Markdown Preview: Preview in Browser"
+					],
+					[
+						"Mater",
+						"HTML: Encode Special Characters"
+					],
+					[
+						"pan",
+						"Preferences: Settings - Default"
+					],
+					[
+						"",
+						"Preferences: Settings - User"
+					]
+				],
+				"width": 374.0
+			},
+			"console":
+			{
+				"height": 200.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/kaze/build/manjaro-tools-iso-profiles/minimal/xfce-minimal/Packages-Xfce",
+				"/home/kaze/build/manjaro-tools-iso-profiles/minimal/xfce-minimal/profile.conf",
+				"/home/kaze/.config/manjaro-tools/manjaro-tools.conf",
+				"/home/kaze/build/manjaro-tools-iso-profiles/minimal/xfce-minimal/Packages-Root",
+				"/home/kaze/wm/status.sh",
+				"/home/kaze/wm/dwm-start.sh",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/panel",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/profile",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/panel_colors",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/panel_bar",
+				"/home/kaze/wm/reddit/statusline-master/statusline.c",
+				"/home/kaze/wm/reddit/statusline-master/config.h",
+				"/home/kaze/wm/reddit/arrowline-master/arrowline.c",
+				"/home/kaze/wm/dwmStatus/ttwmstatus.c",
+				"/home/kaze/wm/dwmStatus/status.c",
+				"/run/media/kaze/2d3b00fc-8478-4324-9073-7bc57f27befc/home/kaze/Downloads/xinitrc.example",
+				"/home/kaze/wm/wm/rice-master/dwm1/bstack.c",
+				"/home/kaze/wm/reddit/arrowline-master/config.h",
+				"/home/kaze/wm/dwm-start",
+				"/home/kaze/wm/statusbar",
+				"/home/kaze/wm/dwmstatus-master/dwmstatus.c",
+				"/home/kaze/wm/wm/rice-master/xinitrc",
+				"/home/kaze/wm/dwm/config.h",
+				"/home/kaze/wm/wm/rice-master/dwm1/config.h",
+				"/home/kaze/wm/wm/rice-master/Scripts/statusbar",
+				"/run/media/kaze/2d3b00fc-8478-4324-9073-7bc57f27befc/home/kaze/Tor/tor-browser_en-US/Browser/Downloads/dwm-master/config.h",
+				"/run/media/kaze/2d3b00fc-8478-4324-9073-7bc57f27befc/home/kaze/Tor/tor-browser_en-US/Browser/Downloads/dotfiles-master/etc/grub.cfg",
+				"/home/kaze/Documents/Office/LibreOffice/sourcecode/libreoffice-5.0.4.2/animations/source/animcore/animcore.cxx",
+				"/home/kaze/Documents/Office/LibreOffice/sourcecode/libreoffice-5.0.4.2/animations/source/animcore/animcore.component",
+				"/home/kaze/octopress/source/index.html",
+				"/home/kaze/hugo/layouts/partials/header.html",
+				"/home/kaze/hugo/layouts/partials/profile.html",
+				"/home/kaze/hugo/static/css/styles.css",
+				"/home/kaze/octopress/.powrc",
+				"/home/kaze/hugo/static/css/prism.css",
+				"/home/kaze/hugo/layouts/partials/navbar.html",
+				"/home/kaze/hugo/layouts/partials/socialbtns.html",
+				"/home/kaze/hugo/layouts/partials/pagination.html",
+				"/home/kaze/hugo/layouts/partials/footer.html",
+				"/home/kaze/hugo/layouts/partials/fab-buttons.html",
+				"/home/kaze/hugo/config.toml",
+				"/home/kaze/hugo/layouts/section/post.html",
+				"/home/kaze/hugo/layouts/index.html",
+				"/home/kaze/hugo/layouts/_default/single.html",
+				"/home/kaze/hugo/layouts/_default/list.html",
+				"/home/kaze/hugo/themes/hugo-mdl/layouts/partials/postsnippets.html",
+				"/home/kaze/hugo/layouts/partials/disqus.html",
+				"/home/kaze/hugo/layouts/partials/content.html",
+				"/home/kaze/hugo(backup)/config.toml",
+				"/home/kaze/hugo/themes/material-design/layouts/index.html",
+				"/home/kaze/hugo/themes/material-design/layouts/partials/footer.html",
+				"/home/kaze/.config/herbstluftwm/panel.sh",
+				"/home/kaze/.config/herbstluftwm/autostart",
+				"/home/kaze/.config/bspwm/bar/panel_scripts",
+				"/home/kaze/.config/bspwm/bar/panel_config",
+				"/home/kaze/.config/bspwm/bar/panel_bar",
+				"/home/kaze/Downloads/Git/dotfiles-master/.config/bspwm/bspwmrc",
+				"/home/kaze/.config/bspwm/bar/panel",
+				"/home/kaze/Downloads/Git/dotfiles-master/.config/herbstluftwm/panel.sh",
+				"/home/kaze/Documents/Tugas Kuliah/new/gaji.p",
+				"/home/kaze/Documents/Tugas Kuliah/Semester/anu.p",
+				"/home/kaze/Documents/Tugas Kuliah/Semester/semes.p",
+				"/home/kaze/Downloads/Git/dotfiles-master/bin/exitbox",
+				"/home/kaze/Documents/Tugas Kuliah/new/menu.p",
+				"/home/kaze/.Xdefaults",
+				"/home/kaze/.Xresources",
+				"/home/kaze/.config/termite/config",
+				"/home/kaze/.themes/Hoho/gtk-3.0/gtk.css",
+				"/home/kaze/.themes/Hoho/gtk-3.0/gtk-contained.css",
+				"/home/kaze/.themes/Hoho/gtk-2.0/gtkrc",
+				"/home/kaze/.ncmpcpp/config",
+				"/home/kaze/startpage/css/homepage.css",
+				"/home/kaze/.xinitrc",
+				"/home/kaze/startpage/index.html",
+				"/home/kaze/.bashrc",
+				"/home/kaze/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/kaze/.themes/Hoho/xfwm4/themerc",
+				"/home/kaze/Documents/Tugas Kuliah/for.pas",
+				"/home/kaze/Documents/Tugas Kuliah/ex.pas",
+				"/home/kaze/Documents/Tugas Kuliah/for1.p",
+				"/home/kaze/Documents/Tugas Kuliah/array.p",
+				"/home/kaze/nanikachan.github.io/_includes/menu-search.html",
+				"/home/kaze/nanikachan.github.io/assets/css/main.css",
+				"/home/kaze/nanikachan.github.io/_includes/gallery.html",
+				"/home/kaze/nanikachan.github.io/assets/thumbnail-gallery.css",
+				"/home/kaze/nanikachan.github.io/_includes/footer.html",
+				"/home/kaze/cobacoba/startbootstrap-thumbnail-gallery-1.0.4/css/bootstrap.css",
+				"/home/kaze/nanikachan.github.io/gallery.html",
+				"/home/kaze/cobacoba/startbootstrap-thumbnail-gallery-1.0.4/index.html",
+				"/home/kaze/cobacoba/startbootstrap-thumbnail-gallery-1.0.4/js/bootstrap.min.js",
+				"/home/kaze/cobacoba/startbootstrap-thumbnail-gallery-1.0.4/css/bootstrap.min.css",
+				"/home/kaze/nanikachan.github.io/_layouts/gallery.html",
+				"/home/kaze/nanikachan.github.io/_includes/menu.html",
+				"/home/kaze/cobacoba/jekyll-material-design-master/assets/themes/bootstrap/css/syntax-monokai-alt.css",
+				"/home/kaze/nanikachan.github.io/assets/css/app.scss",
+				"/home/kaze/nanikachan.github.io/_includes/head.html",
+				"/home/kaze/nanikachan.github.io/_layouts/default.html",
+				"/home/kaze/nanikachan.github.io/index.html",
+				"/home/kaze/nanikachan.github.io/_includes/header-default.html",
+				"/home/kaze/GEC jekyll/freelancer-theme-master/_includes/footer.html",
+				"/home/kaze/nanikachan.github.io/src/sass/_pygments.scss",
+				"/home/kaze/git/riefachan.github.io-master/_sass/_pygments.scss",
+				"/home/kaze/nanikachan.github.io/src/styl/_variables.styl",
+				"/home/kaze/nanikachan.github.io/src/styl/_hightlight.styl",
+				"/home/kaze/cobacoba/jekyll-material-design-master/_includes/themes/bootstrap/default.html",
+				"/home/kaze/nanikachan.github.io/_layouts/compress.html",
+				"/home/kaze/nanikachan.github.io/_layouts/page.html",
+				"/home/kaze/cobacoba/jekyll-material-design-master/_includes/themes/bootstrap/settings.yml",
+				"/home/kaze/cobacoba/jekyll-material-design-master/_includes/themes/bootstrap/page.html",
+				"/home/kaze/cobacoba/jekyll-material-design-master/_config.yml",
+				"/home/kaze/cobacoba/jekyll-material-design-master/_includes/themes/bootstrap/index.html",
+				"/home/kaze/cobacoba/jekyll-material-design-master/_includes/themes/bootstrap/post.html",
+				"/home/kaze/nanikachan.github.io/_config.yml",
+				"/home/kaze/nanikachan.github.io/_posts/2015-11-10-Video-with-poster.markdown",
+				"/home/kaze/cobacoba/JekyllMetro-master/_layouts/master.html",
+				"/home/kaze/nanikachan.github.io/_posts/2015-11-10-Include HTML partial inside Markdown file.markdown",
+				"/home/kaze/Documents/Tutor Pascal/boolean.p",
+				"/home/kaze/Downloads/HaCoderPhish/config/main.php",
+				"/media/kaze/DVD/New Folder/obmenu-generator/config.pl",
+				"/home/kaze/Documents/Tugas Kuliah/gaji1.p",
+				"/home/kaze/Documents/start page materialize/index.html",
+				"/home/kaze/Documents/start-page/startpage/index.html",
+				"/home/kaze/Documents/start-page/homepage.css",
+				"/home/kaze/Documents/start-page/index.html",
+				"/home/kaze/Documents/Tugas Kuliah/new/menu_repeat.p",
+				"/home/kaze/Documents/Tugas Kuliah/kalkulator.p",
+				"/home/kaze/GEC jekyll/freelancer-theme-master (2)/mail/contact_me.php",
+				"/home/kaze/GEC jekyll/freelancer-theme-master (2)/_config.yml"
+			],
+			"find":
+			{
+				"height": 70.0
+			},
+			"find_in_files":
+			{
+				"height": 158.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"thumbna",
+					"thumbs",
+					"thumb",
+					"#3F51B5",
+					"rela",
+					"user",
+					"header",
+					"share",
+					"#F44336",
+					"copyright",
+					"copyrigiht",
+					"footer",
+					"page",
+					"#F44336",
+					"#F44336\n",
+					"height:30px}#F44336\n",
+					"#F44034",
+					"footer",
+					"130px",
+					"button",
+					"post",
+					"article",
+					"post",
+					"article",
+					"font",
+					"font-face",
+					"font",
+					"fonts",
+					":');",
+					"font-fa",
+					"article",
+					"artic",
+					"pos",
+					"font",
+					" \n",
+					"helllo",
+					"about"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 29.0
+			},
+			"input":
+			{
+				"height": 67.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 54.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"css/app.scss"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 154.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"c",
+						"color"
+					],
+					[
+						"b",
+						"blockquote	Tag"
+					],
+					[
+						"ce",
+						"center	Tag"
+					],
+					[
+						"ro",
+						"Roboto"
+					],
+					[
+						"fon",
+						"font-family"
+					],
+					[
+						"M",
+						"m"
+					],
+					[
+						"wr",
+						"writeln"
+					],
+					[
+						"write",
+						"writeln"
+					],
+					[
+						"hasi",
+						"Hasil"
+					],
+					[
+						"ha",
+						"hasile"
+					],
+					[
+						"wri",
+						"writeln"
+					],
+					[
+						"A",
+						"A"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 354.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"tog",
+						"View: Toggle Menu"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"hexview",
+						"Hex Viewer: Generate Hash"
+					],
+					[
+						"hand",
+						"Snippet: handlebars template"
+					],
+					[
+						"markdown",
+						"Set Syntax: Markdown Extended"
+					],
+					[
+						"ma",
+						"Markdown Preview: Preview in Browser"
+					],
+					[
+						"Mater",
+						"HTML: Encode Special Characters"
+					],
+					[
+						"pan",
+						"Preferences: Settings - Default"
+					],
+					[
+						"",
+						"Preferences: Settings - User"
+					]
+				],
+				"width": 374.0
+			},
+			"console":
+			{
+				"height": 200.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/kaze/Documents/nanikachan.github.io/_includes/header-default.html",
+				"/home/kaze/Documents/nyasuh.github.io/_includes/footer.html",
+				"/home/kaze/backup/untitled.html",
+				"/home/kaze/.config/cava/config",
+				"/home/kaze/.config/sublime-text-3/Packages/User/ColorHighlighter.sublime-settings",
+				"/home/kaze/.config/sublime-text-3/Packages/ColorPicker/ColorPicker.sublime-settings",
+				"/home/kaze/startpage/index.html",
+				"/home/kaze/startpage/css/style.css",
+				"/home/kaze/startpage/css/materialize.css",
+				"/home/kaze/.mozilla/firefox/w1oqy2we.default/chrome/userChrome.css",
+				"/home/kaze/Downloads/StartPage-master/index.html",
+				"/home/kaze/Downloads/StartPage-master/style.css",
+				"/home/kaze/startpage/StartPage-master/index.html",
+				"/home/kaze/startpage/css/materialize.min.css",
+				"/home/kaze/backup/old/css.old/index.html",
+				"/home/kaze/backup/old/css.old/css/homepage.css",
+				"/home/kaze/startpage/js/materialize.js",
+				"/home/kaze/startpage/css/main.css",
+				"/home/kaze/startpage/css/homepage.css",
+				"/home/kaze/startpage/css/main.scss",
+				"/home/kaze/startpage/assets/css/materialize.css",
+				"/run/media/kaze/56d81409-7dfe-456e-a715-a45247409e1e/home/kaze/startpage/css/homepage.css",
+				"/run/media/kaze/56d81409-7dfe-456e-a715-a45247409e1e/home/kaze/startpage/index.html",
+				"/home/kaze/.xmonad/xmonad.hs",
+				"/home/kaze/.Xresources",
+				"/home/kaze/.xmonad/assets/conky/info.conkyrc",
+				"/home/kaze/.ncmpcpp/config",
+				"/home/kaze/.xmonad/assets/bin/panel-info.sh",
+				"/home/kaze/.xmonad/assets/bin/mpc.sh",
+				"/home/kaze/.xmonad/assets/bin/dmenu-run.sh",
+				"/home/kaze/Manjaro/manjaro-tools-iso-profiles/minimal/xfce-minimal/profile.conf",
+				"/home/kaze/Manjaro/manjaro-tools-iso-profiles/minimal/xfce-minimal/Packages-Xfce",
+				"/home/kaze/.Xclients",
+				"/tmp/yaourt-tmp-kaze/aur-messengerfordesktop/PKGBUILD",
+				"/home/kaze/.config/manjaro-tools/manjaro-tools.conf",
+				"/home/kaze/Downloads/Android/platform_manifest-optimized-lollipop5.1/build.sh",
+				"/home/kaze/Downloads/Android/platform_manifest-optimized-lollipop5.1/setup.sh",
+				"/home/kaze/Manjaro/manjaro-tools-iso-profiles/minimal/xfce-minimal/xfce-overlay/etc/lightdm/lightdm-gtk-greeter.conf",
+				"/home/kaze/.config/i3/bin/volume.sh",
+				"/home/kaze/.config/herbstluftwm/bar/panel_bar",
+				"/home/kaze/.config/herbstluftwm/bar/panel",
+				"/home/kaze/.config/i3/bin/panel-info.sh",
+				"/home/kaze/.config/herbstluftwm/bar/panel_config",
+				"/home/kaze/.config/i3/config",
+				"/home/kaze/.config/i3/bin/conky/info2",
+				"/home/kaze/.config/i3/bin/conky/info",
+				"/home/kaze/.config/i3/bin/volume-bar.sh",
+				"/home/kaze/.config/herbstluftwm/autostart",
+				"/home/kaze/.config/herbstluftwm/panel_config",
+				"/home/kaze/.config/herbstluftwm/panel_bar",
+				"/home/kaze/.config/herbstluftwm/panel",
+				"/home/kaze/.config/herbstluftwm/panel.sh",
+				"/home/kaze/.config/herbstluftwm/panel_bar.sh",
+				"/home/kaze/Wm/dotfiles-master/.config/herbstluftwm/swap.sh",
+				"/home/kaze/Wm/dotfiles-master/.config/herbstluftwm/panel.sh",
+				"/home/kaze/Wm/dotfiles-master/.config/herbstluftwm/autostart",
+				"/home/kaze/Documents/nyasuh.github.io/index.html",
+				"/home/kaze/build/manjaro-tools-iso-profiles/minimal/xfce-minimal/Packages-Xfce",
+				"/home/kaze/build/manjaro-tools-iso-profiles/minimal/xfce-minimal/profile.conf",
+				"/home/kaze/build/manjaro-tools-iso-profiles/minimal/xfce-minimal/Packages-Root",
+				"/home/kaze/wm/status.sh",
+				"/home/kaze/wm/dwm-start.sh",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/panel",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/profile",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/panel_colors",
+				"/home/kaze/wm/reddit/bspwm-lemonbar-config-master/panel_bar",
+				"/home/kaze/wm/reddit/statusline-master/statusline.c",
+				"/home/kaze/wm/reddit/statusline-master/config.h",
+				"/home/kaze/wm/reddit/arrowline-master/arrowline.c",
+				"/home/kaze/wm/dwmStatus/ttwmstatus.c",
+				"/home/kaze/wm/dwmStatus/status.c",
+				"/run/media/kaze/2d3b00fc-8478-4324-9073-7bc57f27befc/home/kaze/Downloads/xinitrc.example",
+				"/home/kaze/wm/wm/rice-master/dwm1/bstack.c",
+				"/home/kaze/wm/reddit/arrowline-master/config.h",
+				"/home/kaze/wm/dwm-start",
+				"/home/kaze/wm/statusbar",
+				"/home/kaze/wm/dwmstatus-master/dwmstatus.c",
+				"/home/kaze/wm/wm/rice-master/xinitrc",
+				"/home/kaze/wm/dwm/config.h",
+				"/home/kaze/wm/wm/rice-master/dwm1/config.h",
+				"/home/kaze/wm/wm/rice-master/Scripts/statusbar",
+				"/run/media/kaze/2d3b00fc-8478-4324-9073-7bc57f27befc/home/kaze/Tor/tor-browser_en-US/Browser/Downloads/dwm-master/config.h",
+				"/run/media/kaze/2d3b00fc-8478-4324-9073-7bc57f27befc/home/kaze/Tor/tor-browser_en-US/Browser/Downloads/dotfiles-master/etc/grub.cfg",
+				"/home/kaze/Documents/Office/LibreOffice/sourcecode/libreoffice-5.0.4.2/animations/source/animcore/animcore.cxx",
+				"/home/kaze/Documents/Office/LibreOffice/sourcecode/libreoffice-5.0.4.2/animations/source/animcore/animcore.component",
+				"/home/kaze/octopress/source/index.html",
+				"/home/kaze/hugo/layouts/partials/header.html",
+				"/home/kaze/hugo/layouts/partials/profile.html",
+				"/home/kaze/hugo/static/css/styles.css",
+				"/home/kaze/octopress/.powrc",
+				"/home/kaze/hugo/static/css/prism.css",
+				"/home/kaze/hugo/layouts/partials/navbar.html",
+				"/home/kaze/hugo/layouts/partials/socialbtns.html",
+				"/home/kaze/hugo/layouts/partials/pagination.html",
+				"/home/kaze/hugo/layouts/partials/footer.html",
+				"/home/kaze/hugo/layouts/partials/fab-buttons.html",
+				"/home/kaze/hugo/config.toml",
+				"/home/kaze/hugo/layouts/section/post.html",
+				"/home/kaze/hugo/layouts/index.html",
+				"/home/kaze/hugo/layouts/_default/single.html",
+				"/home/kaze/hugo/layouts/_default/list.html",
+				"/home/kaze/hugo/themes/hugo-mdl/layouts/partials/postsnippets.html",
+				"/home/kaze/hugo/layouts/partials/disqus.html",
+				"/home/kaze/hugo/layouts/partials/content.html",
+				"/home/kaze/hugo(backup)/config.toml",
+				"/home/kaze/hugo/themes/material-design/layouts/index.html",
+				"/home/kaze/hugo/themes/material-design/layouts/partials/footer.html",
+				"/home/kaze/.config/bspwm/bar/panel_scripts",
+				"/home/kaze/.config/bspwm/bar/panel_config",
+				"/home/kaze/.config/bspwm/bar/panel_bar",
+				"/home/kaze/Downloads/Git/dotfiles-master/.config/bspwm/bspwmrc",
+				"/home/kaze/.config/bspwm/bar/panel",
+				"/home/kaze/Downloads/Git/dotfiles-master/.config/herbstluftwm/panel.sh",
+				"/home/kaze/Documents/Tugas Kuliah/new/gaji.p",
+				"/home/kaze/Documents/Tugas Kuliah/Semester/anu.p",
+				"/home/kaze/Documents/Tugas Kuliah/Semester/semes.p",
+				"/home/kaze/Downloads/Git/dotfiles-master/bin/exitbox",
+				"/home/kaze/Documents/Tugas Kuliah/new/menu.p",
+				"/home/kaze/.Xdefaults",
+				"/home/kaze/.config/termite/config",
+				"/home/kaze/.themes/Hoho/gtk-3.0/gtk.css",
+				"/home/kaze/.themes/Hoho/gtk-3.0/gtk-contained.css",
+				"/home/kaze/.themes/Hoho/gtk-2.0/gtkrc",
+				"/home/kaze/.xinitrc",
+				"/home/kaze/.bashrc",
+				"/home/kaze/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/kaze/.themes/Hoho/xfwm4/themerc",
+				"/home/kaze/Documents/Tugas Kuliah/for.pas"
+			],
+			"find":
+			{
+				"height": 70.0
+			},
+			"find_in_files":
+			{
+				"height": 158.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"left",
+					"border-bottom: 1px solid",
+					"border-bottom: 1px solid #03a9f4;",
+					"textarea:focus {\n  border-bottom: 1px solid #03a9f4;",
+					"textarea:focus",
+					"forms",
+					"form",
+					"container",
+					"foot",
+					"colla",
+					"input=\"search\"",
+					"id=\"search\"",
+					"search",
+					"id",
+					"nav-wra",
+					"form",
+					"search",
+					"searc",
+					"navbar",
+					"nav-wra",
+					"nav-wa",
+					"nav",
+					"search",
+					">\n",
+					"retur",
+					"termi",
+					"urxvt",
+					"diarifa",
+					"thumbna",
+					"thumbs",
+					"thumb",
+					"#3F51B5",
+					"rela",
+					"user",
+					"header",
+					"share",
+					"#F44336",
+					"copyright",
+					"copyrigiht",
+					"footer",
+					"page",
+					"#F44336",
+					"#F44336\n",
+					"height:30px}#F44336\n",
+					"#F44034",
+					"footer",
+					"130px",
+					"button",
+					"post",
+					"article",
+					"post",
+					"article",
+					"font",
+					"font-face",
+					"font",
+					"fonts",
+					":');",
+					"font-fa",
+					"article",
+					"artic",
+					"pos",
+					"font",
+					" \n",
+					"helllo",
+					"about"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"color_scheme": "Packages/Materialize/schemes/Material Brogrammer.tmTheme",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 28.0
+			},
+			"input":
+			{
+				"height": 67.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,0,0,1366,768",
+			"project": "",
+			"replace":
+			{
+				"height": 52.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"css/app.scss"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 154.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 13,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

@@ -1,0 +1,216 @@
+# Set default mod key [Super]
+
+set $mod mod1
+set $alt2 mod2
+set $mod Mod4
+
+#name                   #top    #border #text
+client.focused          #402e2e #978965 #402e2e #978965
+client.unfocused        #402e2e #402e2e #978965 #402e2e
+client.focused_inactive #402e2e #402e2e #978965 #402e2e
+client.urgent           #402e2e #402e2e #978965 #402e2e
+
+
+# Configure border style
+new_window none
+new_float none
+
+### 1pixel border Windows
+for_window [class="URxvt"] border 1pixel
+for_window [class="feh"] border 1pixel
+for_window [class="mpv"] border 1pixel
+for_window [class="Zathura"] border 1pixel
+
+### Floating Windows
+for_window [class="URxvt"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="thunar"] floating enable
+
+# Set floating window size
+floating_maximum_size 1280 x 720
+
+# Set layout for containers
+workspace_layout tabbed
+
+### Scrot screenshot
+bindsym $mod+Shift+s exec "mkdir -p Pictures/Screenshots && scrot -q 100 Pictures/Screenshots/scrot.jpg"
+
+# Hide boders
+hide_edge_borders both
+
+# Set font for window titles
+font ohsnap 10
+
+# Set FreeType font, if you want better rendering
+font pango:ohsnap 12
+
+# Use Mouse + mod key to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Start a terminal
+bindsym $mod+Return exec urxvt
+
+# Kill focused window
+bindsym $mod+Shift+p kill
+
+# Start a program launcher
+bindsym $mod+d exec sh /home/kaze/scripts/dmenu.sh
+
+# Start a file manager
+# bindsym $mod+s exec --no-startup-id terminator --title="SpaceFm File Manager" -e "spacefm"
+bindsym $mod+s exec thunar
+bindsym $mod+i exec firefox
+
+# Change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split screen in horizontal
+bindsym $mod+h split h
+
+# Split screen in vertical
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# Change container layout
+bindsym $mod+z layout stacking
+bindsym $mod+x layout tabbed
+bindsym $mod+c layout toggle split
+
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container
+bindsym $mod+o focus parent
+
+# Workspace names
+#workspace A: Anu
+#workspace 2: Internet
+#workspace 3: Multimedia
+#workspace 4: Games
+
+# Switch to workspaces
+bindsym $mod+1 workspace Term 
+bindsym $mod+2 workspace Web
+bindsym $mod+3 workspace File 
+bindsym $mod+4 workspace Work
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace て: Term
+bindsym $mod+Shift+2 move container to workspace い: Web
+bindsym $mod+Shift+3 move container to workspace シ: File
+bindsym $mod+Shift+4 move container to workspace し: Work
+
+# Open specific applications on specific workspaces
+assign [class="Thunar"] File
+assign [class="Vlc"] Work
+assign [class="Firefox"] Web
+assign [class="Gimp"] Work
+
+
+# Open specific applications in floating mod
+#for_window [title="Terminal Emulator"] floating enable
+#for_window [title="Pidgin"] floating enable
+#for_window [title="Buddy List"] floating enable
+#for_window [title="xfce4-notifyd"] floating enable
+#for_window [title="Manjaro Welcome"] floating enable
+#for_window [title="Manjaro Installer"] floating enable
+
+# Reload the configuration file
+bindsym $mod+Shift+m reload
+
+# Restart i3 inplace
+bindsym $mod+Shift+n restart
+
+# Resize window
+mode "resize" {
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # Back to normal : "Enter" or "Escape"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+Tab mode "resize"
+
+# Lock screen with i3 Lock
+bindsym $mod+5 exec --no-startup-id i3lock -c 222222
+
+# Set shut down, restart and locking features
+set $mode_system (L) Lock, (E) Logout, (Shift + S) Suspend, (H) Hibernate, (R) Reboot, (S) Shut down
+
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # Back to normal : "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+6 mode "$mode_system"
+
+##
+### Custom ###
+#gap_size 10
+gaps inner 5
+gaps outer 10
+smart_gaps on
+smart_borders on
+for_window [class="^.*"] border pixel 2
+new_float pixel 1
+
+# Bar stuff
+# Toggle between hide state and show state
+bindsym $mod+m bar hidden_state toggle
+# Toggle between dock mode and hide mode
+bindsym $mod+n bar mode toggle
+# Set the bar instance with id 'bar-1' to switch to hide mode
+bindsym $mod+b bar mode hide bar-1
+# Set the bar instance with id 'bar-1' to always stay hidden
+bindsym $mod+Shift+b bar mode invisible bar-1
+
+# Start i3 status bar
+bar {
+	mode dock
+	position top
+	workspace_buttons yes
+    status_command sh ~/.config/i3/script/status.sh
+	tray_output none
+	font pango:ohsnap 12
+	colors {
+		background #101010
+		statusline #605c5a
+		# item			border   bg   fg
+		focused_workspace #101010 #101010 #FFFFFF
+		active_workspace #3300FF #101010 #101010
+		inactive_workspace #1E90FF #1E90FF #FFFFFF
+		urgent_workspace #2e3436 #9a878f
+	}
+}
+
+exec --no-startup-id /home/kaze/.config/i3/script/dzen2info.sh
+exec --no-startup-id /home/kaze/.config/i3/script/dzen2infoo.sh
+exec --no-startup-id /home/kaze/.config/i3/script/menu.sh
+#exec --no-startup-id /home/kaze/.config/i3/script/status.sh
+exec --no-startup-id /usr/lib/lxpolkit/lxpolkit &
+exec --no-startup-id nitrogen --restore &

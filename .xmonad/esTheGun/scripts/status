@@ -1,0 +1,18 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.5
+total_run_times 0
+use_spacer none
+ 
+TEXT
+^fg(\#FF273B)^i(/home/kaze/.icons/xbm8x8/arrow_big_01.xbm)\
+^bg(\#FF273B)^fg(\#FFFFFF)^i(/home/kaze/.icons/hakase/music.xbm) ${exec sh /home/kaze/scripts/func_mpc.sh} \
+^fg(\#13BC96)^i(/home/kaze/.icons/xbm8x8/arrow_big_01.xbm)^fg()^bg(\#13BC96) \
+^bg(\#13BC96)^fg(\#FFFFFF)^i(/home/kaze/.icons/stlarch/cpu15.xbm) ${cpu cpu0}% ${cpu cpu1}%  \
+^fg(\#24A02E)^i(/home/kaze/.icons/xbm8x8/arrow_big_01.xbm)^fg()^bg(\#24A02E)\
+^bg(\#24A02E)^fg(\#FFFFFF)^i(/home/kaze/.icons/stlarch/clock1.xbm) $uptime_short \
+^fg(\#CBB31E)^i(/home/kaze/.icons/xbm8x8/arrow_big_01.xbm)^bg(\#CBB31E)^fg() \
+^fg(\#FFFFFF)^i(/home/kaze/.icons/hakase/mem.xbm) ${mem} \
+^fg(\#D12F14)^i(/home/kaze/.icons/xbm8x8/arrow_big_01.xbm)\
+^bg(\#D12F14)^fg(\#FFFFFF)^i(/home/kaze/.icons/hakase/user.xbm) Nami \

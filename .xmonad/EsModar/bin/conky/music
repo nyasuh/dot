@@ -1,0 +1,10 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+
+TEXT
+^bg(\#0BA0AB)^fg(\#1A1A1A)^i(/home/kaze/.xmonad/icon/mr1.xbm)^fg() ^fg(\#FFFFFF)^bg(\#0BA0AB)${exec sh /home/kaze/.xmonad/bin/mpc.sh} \
+^bg(\#1A1A1A)^fg(\#0BA0AB)^i(/home/kaze/.xmonad/icon/mt1.xbm)^fg()\

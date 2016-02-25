@@ -1,0 +1,178 @@
+# Set default mod key [Super]
+set $mod Mod4
+
+#name                   #top    #border #text
+client.focused          #402e2e #978965 #402e2e #978965
+client.unfocused        #402e2e #402e2e #978965 #402e2e
+client.focused_inactive #402e2e #402e2e #978965 #402e2e
+client.urgent           #402e2e #402e2e #978965 #402e2e
+
+
+# Configure border style
+new_window none
+new_float none
+
+### 1pixel border Windows
+for_window [class="URxvt"] border 1pixel
+for_window [class="feh"] border 1pixel
+for_window [class="vlc"] border 1pixel
+for_window [class="Zathura"] border 1pixel
+
+### Floating Windows
+for_window [class="URxvt"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="thunar"] floating enable
+
+# Set floating window size
+floating_maximum_size 1280 x 720
+
+# Set layout for containers
+workspace_layout tabbed
+
+### Scrot screenshot
+bindsym $mod+Shift+s exec "mkdir -p ~/Pictures/Screenshots && scrot -q 100 Pictures/Screenshots/scrot.jpg"
+
+# Hide boders
+hide_edge_borders both
+
+# Set font for window titles
+font ohsnap 10
+
+# Set FreeType font, if you want better rendering
+font pango:ohsnap 12
+
+# Use Mouse + mod key to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Start a terminal
+bindsym $mod+Return exec urxvt
+
+# Kill focused window
+bindsym $mod+Shift+p kill
+
+# Start a program launcher
+bindsym $mod+d exec sh /home/nami/scripts/dmenu2.sh
+
+# Start a file manager
+bindsym $mod+s exec thunar
+bindsym $mod+i exec firefox
+
+# Change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split screen in horizontal
+bindsym $mod+h split h
+
+# Split screen in vertical
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# Change container layout
+bindsym $mod+z layout stacking
+bindsym $mod+x layout tabbed
+bindsym $mod+c layout toggle split
+
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container
+bindsym $mod+o focus parent
+
+# Switch to workspaces
+bindsym $mod+1 workspace Term 
+bindsym $mod+2 workspace Web
+bindsym $mod+3 workspace File 
+bindsym $mod+4 workspace Work
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace て: Term
+bindsym $mod+Shift+2 move container to workspace い: Web
+bindsym $mod+Shift+3 move container to workspace シ: File
+bindsym $mod+Shift+4 move container to workspace し: Work
+
+# Open specific applications on specific workspaces
+assign [class="Thunar"] File
+assign [class="Vlc"] Work
+assign [class="Firefox"] Web
+assign [class="Gimp"] Work
+
+
+# Reload the configuration file
+bindsym $mod+Shift+m reload
+
+# Restart i3 inplace
+bindsym $mod+Shift+n restart
+
+# Resize window
+mode "resize" {
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # Back to normal : "Enter" or "Escape"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+Tab mode "resize"
+
+# Lock screen with i3 Lock
+bindsym $mod+5 exec --no-startup-id i3lock -c 222222
+
+# Set shut down, restart and locking features
+set $mode_system (L) Lock, (E) Logout, (Shift + S) Suspend, (H) Hibernate, (R) Reboot, (S) Shut down
+
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # Back to normal : "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+6 mode "$mode_system"
+
+# Start i3 status bar
+bar {
+	mode dock
+	position top
+	workspace_buttons yes
+    status_command sh ~/.config/i3/status.sh
+	tray_output none
+	font pango:ohsnap 12
+	colors {
+		background #101010
+		statusline #605c5a
+		# item			border   bg   fg
+		focused_workspace #101010 #101010 #FFFFFF
+		active_workspace #3300FF #101010 #101010
+		inactive_workspace #1E90FF #1E90FF #FFFFFF
+		urgent_workspace #2e3436 #9a878f
+	}
+}
+
+
+
+# Autostart applications
+exec --no-startup-id /usr/lib/lxpolkit/lxpolkit &
+exec --no-startup-id nitrogen --restore &
+

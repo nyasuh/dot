@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Materialize/schemes/Material Brogrammer.tmTheme",
+	"command": "toggle_menu",
+	"font_size": 12,
+	"keys":
+	[
+		"ctrl+alt+m"
+	],
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"update_check": false
+}

@@ -1,0 +1,22 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.5
+total_run_times 0
+use_spacer none
+ 
+TEXT
+^fg(\#FF273B)^i(/home/nami/.icons/xbm8x8/arrow_big_01.xbm)\
+^bg(\#FF273B)^fg(\#FFFFFF)^i(/home/nami/.icons/hakase/music.xbm) ${exec sh /home/nami/scripts/func_mpc.sh} \
+^fg(\#101010)^i(/home/nami/.icons/xbm8x8/arrow_big_01.xbm)^fg()^bg() \
+^fg(\#FFFFFF)^i(/home/nami/.icons/stlarch/cpu15.xbm) ${cpu cpu0}% ${cpu cpu1}%  \
+^fg(\#C93E25)^i(/home/nami/.icons/xbm8x8/arrow_big_01.xbm)^fg()^bg()\
+^bg(\#C93E25)^fg(\#FFFFFF)^i(/home/nami/.icons/stlarch/clock1.xbm) $uptime_short \
+^fg(\#101010)^i(/home/nami/.icons/xbm8x8/arrow_big_01.xbm)^bg()^fg() \
+^fg(\#FFFFFF)^i(/home/nami/.icons/hakase/mem.xbm) ${mem} \
+^fg(\#A8AC1F)^i(/home/nami/.icons/xbm8x8/arrow_big_01.xbm)^fg()\
+^bg(\#A8AC1F)^fg(\#FFFFFF) ^i(/home/nami/.icons/xbm8x8/spkr_01.xbm) ${mpd_vol} \
+^fg(\#101010)^i(/home/nami/.icons/xbm8x8/arrow_big_01.xbm)^bg()^fg() \
+^fg(\#ffffff)^i(/home/nami/.icons/hakase/clock.xbm) ${time %R %p} \
+^fg(\#3A9E21)^i(/home/nami/.icons/xbm8x8/arrow_big_01.xbm)\
+^bg(\#3A9E21)^fg(\#FFFFFF)^i(/home/nami/.icons/hakase/user.xbm) Nami \

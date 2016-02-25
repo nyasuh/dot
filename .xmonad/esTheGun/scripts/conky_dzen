@@ -1,0 +1,11 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+ 
+TEXT
+^fg(\#7d7d7d)   ^i(/home/kaze/.icons/xbm8x8/net_down_03.xbm)  ${downspeedf eth0}    \
+^fg(\#7d7d7d) 	 ^i(/home/kaze/.icons/xbm8x8/net_up_03.xbm)  ${upspeedf eth0   	\    
+

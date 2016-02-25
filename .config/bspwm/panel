@@ -1,0 +1,124 @@
+#!/bin/bash
+HERE="$HOME/.config/bspwm"
+PANEL_FIFO=/tmp/panel-fifo
+PANEL_HEIGHT=34
+PANEL_FONT_FAMILY="envypn for powerline:size=12"
+ICON_FONT="FontAwesome:size=9"
+#ICON_FONT2="fontcustom:size=11"
+ICON_FONT2="FontAwesome:size=9"
+
+if [ $(pgrep -cx panel) -gt 1 ] ; then
+	printf "%s\n" "The panel is already running." >&2
+	exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+bspc config top_padding $PANEL_HEIGHT
+bspc control --subscribe > "$PANEL_FIFO" &
+xtitle -sf 'T%s' > "$PANEL_FIFO" &
+
+# clock
+while true;
+	do
+		echo 'C ' $(date +"%l:%M %p");
+	sleep 5;
+done > "$PANEL_FIFO" &
+
+# date
+while true;
+do echo 'D ' $(date +'%b %d')
+	sleep 5
+done > $PANEL_FIFO &
+# battery
+while true;
+do
+BATT_LEVEL=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
+	if [ $BATT_LEVEL -ge 80 ]
+		then
+			echo 'B' $BATT_LEVEL%
+	fi
+
+	if [ $BATT_LEVEL -ge 30 -a $BATT_LEVEL -lt 80 ]
+		then
+			echo 'B' $BATT_LEVEL%
+	fi
+
+	if [ $BATT_LEVEL -lt 30 ]
+		then
+			echo 'B%{T3}%{T1}' $BATT_LEVEL%
+	fi
+
+
+	sleep 30;
+done > "$PANEL_FIFO" &
+
+# alsa volume
+while true;
+do
+ALSA_VOLUME=$(amixer get Master | grep 'Mono: Playback' | grep -o '...%' | sed 's/\[//' | sed 's/%//' | sed 's/ //')
+ALSA_STATE=$(amixer get Master | grep 'Mono: Playback' | grep -o '\[on]')
+
+if [ $ALSA_STATE ]
+then
+	if [ $ALSA_VOLUME -ge 70 ]
+	then
+		echo V'' $ALSA_VOLUME
+	fi
+	if [ $ALSA_VOLUME -gt 0 -a $ALSA_VOLUME -lt 70 ]
+	then
+		echo V'' $ALSA_VOLUME
+	fi
+	if [ $ALSA_VOLUME -eq 0 ]
+	then
+		echo V'' $ALSA_VOLUME
+	fi
+	else
+		echo V'' $ALSA_VOLUME
+	fi
+	sleep 0.1
+done > $PANEL_FIFO &
+
+# disk space
+#while true;
+#do
+#  DIR=$(df -hlP /home | grep /home | sed 's/ \+/ /g' | cut -d' ' -f6)
+##  FREE_SPACE=$(df -hlP /home | grep /home | sed 's/ \+/ /g' | cut -d' ' -f4)
+#  echo F'' $DIR $FREE_SPACE 'free'
+#  sleep 10
+#done > $PANEL_FIFO &
+
+# power
+echo P' Nyasuh ' > $PANEL_FIFO &
+
+# powe
+echo P' Nyasuh' > $PANEL_FIFO &
+
+# music controls
+while true;
+do
+	SONG_NAME=$(mpc | head -n1)
+	if [[ -n $(mpc status | grep paused) ]]
+	then
+		echo "R%{T3}%{A:mpc prev:} %{A} %{A:mpc play:}  %{A}  %{A:mpc next:} %{A}%{T1} "
+	else
+		echo "R%{T3}%{A:mpc prev:} %{A} %{A:mpc pause:} %{A} %{A:mpc next:} %{A}%{T1} "
+	fi
+
+	sleep 1
+done > $PANEL_FIFO &
+
+while true;
+	SONG_NAME=$(mpc | head -n1)
+do echo 'X' $SONG_NAME
+	sleep 1
+done > $PANEL_FIFO &
+
+source $HERE/panel_colors
+
+cat "$PANEL_FIFO" | bash $HERE/panel_bar | lemonbar -g 1326x28+20+10 -f "$PANEL_FONT_FAMILY" -f "$ICON_FONT" -f "$ICON_FONT2" -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 2 | bash &
+
+wait
