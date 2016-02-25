@@ -1,0 +1,148 @@
+# i3 config file (v4)
+set $mod Mod4
+
+#setup color
+set $col1 #353535
+set $col2 #697472
+set $col3 #dddddd
+set $col4 #14BAC5
+set $col5 #2A9AC5
+
+font pango:Ohsnap 8
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec urxvt
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+
+bindsym $mod+d exec sh ~/.config/i3/bin/dmenu_suh.sh
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# autostart application
+exec ~/.config/i3/bin/autostart.sh
+
+for_window [class="^.*"] border pixel 3
+
+# switch to workspace
+bindsym $mod+1 workspace 1: ⮗ ;
+bindsym $mod+3 workspace 2: ⮜ ;
+bindsym $mod+2 workspace 3:;
+bindsym $mod+4 workspace 4: ⮥ ;
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1: ⮗ ;
+bindsym $mod+Shift+3 move container to workspace 2: ⮜ ;
+bindsym $mod+Shift+2 move container to workspace 3: ⮥ ;
+bindsym $mod+Shift+4 move container to workspace 4: ⮥ ;
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+#bindsym $mod+Shift+e exec pkill i3
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+gaps inner 30
+gaps outer 50
+
+client.focused          $col2 $col2 $col2
+client.focused          $col2 $col2 $col2
+client.unfocused        $col1 $col1 $col1
+client.focused_inactive $col1 $col1 $col3
+client.urgent           $col1 $col1 $col3
+
+bar {
+	i3bar_command ~/.config/i3/bin/i3caramelbar
+	status_command ~/.config/i3/bin/panel.sh
+	position top
+	height 20
+	strip_workspace_numbers yes
+	font pango:Inconsolata for Powerline 8,Droid Sans Fallback bold 8
+	colors {
+                background             $col1
+                statusline             $col1
+                active_workspace       $col4 $col4 $col3
+                focused_workspace      $col4 $col4 $col3
+                inactive_workspace     $col5 $col5 $col3
+                urgent_workspace       $col5 $col5 $col3
+	}
+}
