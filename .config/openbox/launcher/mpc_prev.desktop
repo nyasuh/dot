@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=mpc_prev
+Icon=/home/kaze/.config/openbox/launcher/icon/previous.png
+Exec=sh /home/kaze/.config/openbox/launcher/bin/mpc_prev.sh
+NoDisplay=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+StartupNotify=false
+Terminal=false

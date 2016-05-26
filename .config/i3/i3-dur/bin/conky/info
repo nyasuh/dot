@@ -1,0 +1,14 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+
+TEXT
+^fg(\#528588)^i(~/.config/i3/bin/icon/uparrow4.xbm)^fg()  ${upspeedf wlp2s0}   \
+^fg(\#BA5E57)^i(~/.config/i3/bin/icon/downarrow4.xbm)^fg()  ${downspeedf wlp2s0}  \
+^fg(\#505E73)  //^fg()     \
+^fg(\#7d7d7d)^fg() ${exec mpc current -f %title% | tr ‘[a-z]’ ‘[A-Z]’}  (${mpd_elapsed}/${mpd_length})   \
+^fg(\#505E73)  //^fg()      \
+^bg(\#528588)      ${time %R %p}     \

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=mpc_next
+Icon=/home/kaze/.config/openbox/launcher/icon/next.png
+Exec=sh /home/kaze/.config/openbox/launcher/bin/mpc_next.sh
+NoDisplay=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+StartupNotify=false
+Terminal=false

@@ -4,7 +4,7 @@ URxvt.depth: 24
 *scrollBar_floating: true
 *scrollBar_right: true
 
-*internalBorder: 4
+*internalBorder: 20
 
 Xft*dpi: 96
 Xft*antialias: true
@@ -15,47 +15,35 @@ urxvt.blurRadius:       90
 urxvt.fading:           20
 
 
-URxvt.font: 	xft:ohsnap:pixelsize=10
+URxvt.font: 	xft:Droid Sans Mono for Powerline:pixelsize=10
 !URxvt*font: 	xft:envypn for poweline:pixelsize=10
 
-URxvt*cursorBlink: 	true
+! URxvt*cursorBlink: 	true
 URxvt*cursorUnderline: 	true
 
-*cursorColor: #0A0A0A
+*background: #1D2426
+*foreground: #8FA388
 
-! special
-*.foreground:   #90a4ae
-*.background:   #212121
-*.cursorColor:  #eceff1
+! Alternate foreground
+!*foreground: #AB9C71
 
-! black
-*.color0:       #263238
-*.color8:       #37474f
+*cursorColor: #BE5E1E
 
-! red
-*.color1:       #ff9800
-*.color9:       #ffa74d
+*color0:  #39474A
+*color1:  #986345
+*color2:  #788249
+*color3:  #9B6A46
+*color4:  #3E5951
+*color5:  #B9924A
+*color6:  #5d796a
+*color7:  #977D5E
+*color8:  #4C5F63
+*color9:  #B07350
+*color10: #869151
+*color11: #AF6B42
+*color12: #567A6E
+*color13: #D69D55
+*color14: #668574
+*color15: #AB9C71
 
-! green
-*.color2:       #8bc34a
-*.color10:      #9ccc65
-
-! yellow
-*.color3:       #ffc107
-*.color11:      #ffa000
-
-! blue
-*.color4:       #03a9f4
-*.color12:      #81d4fa
-
-! magenta
-*.color5:       #e91e63
-*.color13:      #ad1457
-
-! cyan
-*.color6:       #009688
-*.color14:      #26a69a
-
-! white
-*.color7:       #cfd8dc
-*.color15:      #eceff1
+! vim: ft=xdefaults

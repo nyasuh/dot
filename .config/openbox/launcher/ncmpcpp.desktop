@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=mpc_stop
+Icon=/home/kaze/.config/openbox/launcher/icon/white/music.png
+Exec=urxvt -e ncmpcpp
+NoDisplay=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+StartupNotify=false
+Terminal=true

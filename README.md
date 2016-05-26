@@ -10,27 +10,18 @@
 + Compton 
 + Sxhkd
 + Xdotool
++ Obmenu-generator
++ Tint2
++ Ncmpcpp
 + Etc..
 
 ### Nyasuh Desktop 
 - - -
-#### Bspwm
-##### Bspwm-nyan
-![Nyasuh_bspwm screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/bspwm-nyan.png)  
-##### Bspwm-LeftRight **
-![Nyasuh_bspwm screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/bspwm-LeftRight.png)  
+#### Openbox
+##### NyanBox
+![Nyasuh_openbox screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/NyanBox.png)  
 - - -
 #### i3
-##### i3-des
-![Nyasuh_i3-des screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/i3-des.png)  
-##### i3-caramel
-![Nyasuh_i3-caramel screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/i3-caramel.png)  
-##### i3-suh 
-![Nyasuh_i3-suh screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/i3-suh.png)  
-- - -
-#### Xmonad
-##### esModar
-![Nyasuh_esModar screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/EsModar.png)  
-##### EsTheGun
-![Nyasuh_EsTheGun screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/esTheGun.png)  
+##### i3-dur
+![Nyasuh_i3 screenshot] (https://raw.githubusercontent.com/nyasuh/dot/master/screenshot/i3-dur.png)  
 - - -

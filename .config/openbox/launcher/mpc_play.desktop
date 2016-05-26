@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=mpc_play
+Icon=/home/kaze/.config/openbox/launcher/icon/play.png
+Exec=sh /home/kaze/.config/openbox/launcher/bin/mpc_play.sh
+NoDisplay=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+StartupNotify=false
+Terminal=false

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Tint2 Openbox Menu
+Comment=Tint2 Openbox Menu Hack
+X-GNOME-FullName=Openbox Menu
+Exec=xdotool key super+space
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/kaze/.config/openbox/launcher/icon/white/menu.png
+Categories=Menu;
+MimeType=
+StartupNotify=true
+Name[en_US.UTF-8]=openbox menu

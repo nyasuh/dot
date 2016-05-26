@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tor
+Icon=/home/kaze/.config/openbox/launcher/icon/white/tor.png
+Exec=/home/kaze/Tor/tor-browser_en-US/Browser/start-tor-browser
+NoDisplay=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+StartupNotify=false
+Terminal=false

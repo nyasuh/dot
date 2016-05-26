@@ -1,0 +1,9 @@
+(sleep 1s && tint2) &
+nitrogen --restore &
+setxkbmap us &
+(sleep 3 && nm-applet) &
+(sleep 3 && volumeicon) &
+xfce4-powermanager &
+/usr/bin/lxpolkit &
+urxvtd &
+compton &

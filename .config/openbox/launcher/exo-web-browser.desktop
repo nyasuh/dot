@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Web Browser
+Comment=Browse the web
+Icon=/home/kaze/.config/openbox/launcher/icon/white/firefox.png
+Exec=light
+NoDisplay=true
+OnlyShowIn=XFCE;
+Categories=Network;X-XFCE;X-Xfce-Toplevel;
+StartupNotify=true
+Terminal=false
