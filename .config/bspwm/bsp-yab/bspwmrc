@@ -1,0 +1,45 @@
+#!/bin/bash
+iki="/home/kaze/.config/bspwm"
+
+# bspc config top_padding 5
+# bspc config left_padding 5
+# bspc config right_padding 5
+# bspc config bottom_padding 5
+
+
+desktop_config() {
+    bspc config $1 $2
+    for M in $(bspc query -M); do
+        bspc config -m $M $1 $2
+    done
+}
+desktop_config border_width 3
+desktop_config window_gap 70
+
+
+bspc config split_ratio         0.50
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_by_distance   true
+bspc config focus_follows_pointer true
+bspc config focused_border_color "#528588"
+#bspc config auto_alternate true
+#bspc config auto_cancel true
+
+
+
+bspc rule -a Gimp desktop=^1 follow=on floating=on
+bspc rule -a firefox=^2
+bspc rule -a vlc floating=on
+bspc rule -a Thunar desktop=^2
+bspc rule -a Vlc desktop=^2
+bspc rule -a Lxappearance desktop=^4
+bspc rule -a Nitrogen desktop=^4
+bspc rule -a Feh desktop=^1
+
+yabar -c $iki/bar &
+mpd &
+nitrogen --restore &
+sxhkd -c $iki/keybind &
+xrdb -merge ~/.Xdefaults & 
+compton &

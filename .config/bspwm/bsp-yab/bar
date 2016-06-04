@@ -1,0 +1,75 @@
+bar-list = ["bar1"];
+
+bar1:{
+	font: "Droid Serif 10, FontAwesome 9";
+	block-list: ["ya_workspace", "ya_title", "ya_date", "ya_uptime", "ya_wm", "music"];
+	position: "top";
+	gap-horizontal: 25; 		
+	gap-vertical: 10; 		
+	height: 27; 			
+	#background-color-argb: 0x0;
+	background-color-rgb: 0x343C48;
+	underline-size: 5;
+	overline-size: 1;
+	slack-size: 3;
+	ya_date:{
+		exec: "YABAR_DATE";
+		align: "center";
+		fixed-size: 70;
+		interval: 2;
+        background-color-rgb:0xBA5E57;
+        foreground-color-rgb:0xE5E5E5;
+        #underline-color-rgb:0x00bcd4;
+		internal-prefix: "  ";
+		internal-option1: "%I:%M";
+	}
+	ya_wm:{
+         exec: "wm='    ' && wm+=$(wmctrl -m | grep -i name | awk '{print $2}') && echo $wm";
+        background-color-rgb:0x528588;
+        foreground-color-rgb:0xE5E5E5;
+        #underline-color-rgb:0x00bcd4;
+    	align: "center";
+		fixed-size: 70;
+		type: "periodic";
+		interval: 1;
+	}
+	 music:{
+             background-color-rgb:0x343C48;
+             foreground-color-rgb:0xE5E5E5;
+             underline-color-rgb:0x00bcd4;
+         	 exec: "mus='    ' && mus+=$(mpc current) && echo $mus";
+	         type: "periodic";
+	         align: "right";
+	         fixed-size: 180;
+	         interval: 120;
+          }
+	ya_uptime:{
+			exec: "YABAR_UPTIME";
+		align: "center";
+		fixed-size: 70;
+		interval: 1;
+        background-color-rgb:0x9F8E51;
+        foreground-color-rgb:0x111111;
+        #underline-color-rgb:0x00bcd4;
+		internal-prefix: " ";
+		#internal-spacing: true;
+	}
+	ya_title: {
+		exec: "YABAR_TITLE";
+		align: "left";
+		background-color-rgb:0x343C48;
+	    foreground-color-rgb:0xE5E5E5;
+	    underline-color-rgb:0x00bcd4;
+		justify: "center";
+		fixed-size: 180;
+	}
+    	   ya_workspace: {
+           	  exec: "YABAR_WORKSPACE";
+        	  background-color-rgb:0x343C48;
+	          foreground-color-rgb:0xE5E5E5;
+              underline-color-rgb:0x00bcd4;
+        	  align: "left";
+                  fixed-size: 40;
+                  internal-option1: "     ";
+	    }
+}
